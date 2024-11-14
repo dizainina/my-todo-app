@@ -1,5 +1,5 @@
 import { Footer } from "./TodosWrapStyles";
-import { Button } from "../components/Button";
+import { Button } from "../../components/Button/Button";
 
 interface FooterButtonsProps {
   activeFilter: string;

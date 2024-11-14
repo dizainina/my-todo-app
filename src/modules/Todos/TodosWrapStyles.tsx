@@ -1,4 +1,4 @@
-import { Button } from "../components/Button";
+import { Button } from "../../components/Button/Button";
 import styled, { css, keyframes } from "styled-components";
 
 const fadeIn = keyframes`

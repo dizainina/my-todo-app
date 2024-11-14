@@ -1,6 +1,6 @@
 import React from "react";
 import { Checkbox, Li, TaskText, Ul } from "./TaskListStyles";
-import { Task } from "../type/types";
+import { Task } from "../../type/types";
 
 interface TaskListProps {
   tasks: Task[];

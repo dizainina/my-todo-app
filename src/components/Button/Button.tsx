@@ -17,11 +17,12 @@ export const ButtonStyle = styled.button`
     color: #e9b0b0;
   }
 `;
-interface ButtonProps {
-  onClick: () => void;
+export interface ButtonProps {
+  onClick?: () => void;
   children: React.ReactNode;
   disabled?: boolean;
   className?: string;
+  testId?: string;
 }
 
 export const Button: FC<ButtonProps> = ({
@@ -29,8 +30,14 @@ export const Button: FC<ButtonProps> = ({
   onClick,
   children,
   className,
+  testId,
 }) => (
-  <ButtonStyle onClick={onClick} disabled={disabled} className={className}>
+  <ButtonStyle
+    data-testid={testId}
+    onClick={onClick}
+    disabled={disabled}
+    className={className}
+  >
     {children}
   </ButtonStyle>
 );

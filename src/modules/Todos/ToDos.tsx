@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { TaskList } from "../components/TaskList";
+import { TaskList } from "../../components/TaskList/TaskList";
 import arrow from "./arrow-grey.png";
 
 import {
@@ -11,7 +11,7 @@ import {
   InputWrap,
   TodosWrap,
 } from "./TodosWrapStyles";
-import { Task } from "../type/types";
+import { Task } from "../../type/types";
 import { FooterButtons } from "./FooterButtons";
 
 const ToDos: React.FC = () => {
