@@ -15,7 +15,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    // "types": ["jest", "@testing-library/jest-dom"],
     "jsx": "react-jsx"
   },
-  "include": ["./src/**/*.tsx", "./src/**/*.ts", "src/jest.config.ts"]
+  "include": [
+    "./src/**/*.tsx",
+    "./src/**/*.ts",
+    "src/jest.config.ts",
+    "__mocks__/fileMock.ts"
+  ]
 }

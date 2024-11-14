@@ -35,7 +35,9 @@ export const FooterButtons: React.FC<FooterButtonsProps> = ({
       >
         Completed
       </Button>
-      <Button onClick={removeCompletedTasks}>Clear completed</Button>
+      <Button testId="remove-button" onClick={removeCompletedTasks}>
+        Clear completed
+      </Button>
     </Footer>
   );
 };

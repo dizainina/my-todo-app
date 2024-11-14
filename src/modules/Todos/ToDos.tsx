@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { TaskList } from "../../components/TaskList/TaskList";
-import arrow from "./arrow-grey.png";
+import arrow from "../../assets/arrow-grey.png";
 
 import {
   ArrowButton,
@@ -93,7 +93,7 @@ const ToDos: React.FC = () => {
         </InputWrap>
 
         <Hr />
-        <FadeWrapper isOpen={isOpen}>
+        <FadeWrapper isopen={isOpen ? isOpen.toString() : undefined}>
           <TaskList
             tasks={filteredTasks}
             toggleTaskCompletion={toggleTaskCompletion}

@@ -23,13 +23,13 @@ const fadeOut = keyframes`
   }
 `;
 
-export const FadeWrapper = styled.div<{ isOpen: boolean }>`
+export const FadeWrapper = styled.div<{ isopen: string | undefined }>`
   overflow: hidden; /* Скрытие переполнения */
   transition: max-height 0.3s ease-in-out; /* Плавный переход по высоте */
-  max-height: ${({ isOpen }) =>
-    isOpen ? "500px" : "0"}; /* Ограничение высоты */
-  animation: ${({ isOpen }) =>
-    isOpen
+  max-height: ${({ isopen }) =>
+    isopen ? "500px" : "0"}; /* Ограничение высоты */
+  animation: ${({ isopen }) =>
+    isopen
       ? css`
           ${fadeIn} 0.3s forwards
         `

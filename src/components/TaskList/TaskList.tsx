@@ -12,7 +12,7 @@ export const TaskList: React.FC<TaskListProps> = ({
   toggleTaskCompletion,
 }) => {
   return (
-    <Ul>
+    <Ul data-testid="tasklist">
       {tasks.map((task, index) => (
         <Li key={index} className={task.completed ? "true" : undefined}>
           <label>
